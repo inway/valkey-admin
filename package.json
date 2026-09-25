@@ -22,8 +22,8 @@
     "@vitest/ui": "^4.0.15",
     "concurrently": "^9.2.0",
     "dotenv": "^17.2.3",
-    "electron": "^38.4.0",
-    "electron-builder": "^26.0.12",
+    "electron": "^39.8.10",
+    "electron-builder": "^26.15.3",
     "electron-notarize": "^1.2.2",
     "eslint": "^9.32.0",
     "eslint-plugin-import": "^2.32.0",
@@ -32,7 +32,7 @@
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
     "typescript-eslint": "^8.38.0",
-    "vitest": "^4.0.15"
+    "vitest": "^5.0.1"
   },
   "scripts": {
     "dev": "export DEPLOYMENT_MODE=Web VALKEY_ADMIN_ALLOWED_WS_ORIGINS=http://localhost:5173 VITE_VALKEY_ADMIN_WS_URL=ws://localhost:8080 && npm run build:common && npm run build:metrics && npm run build:frontend && concurrently \"npm --workspace apps/frontend run dev\" \"npm --workspace apps/server run dev\"",
